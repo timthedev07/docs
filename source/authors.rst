@@ -1,3 +1,10 @@
 .. include:: ../AUTHORS.rst
+
+
+The Author
+==================================================
+
+
 Author: Harvard90873
-View my github page for more information
+
+visit my github page for more information
