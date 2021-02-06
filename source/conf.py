@@ -14,7 +14,6 @@
 
 import sys
 import os
-import sphinx_rtd_theme
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -30,11 +29,7 @@ import sphinx_rtd_theme
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 
-extensions = [
-    "sphinx_rtd_theme",
-]
 
-html_theme = "sphinx_rtd_theme"
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
@@ -48,8 +43,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Read the Docs Template'
-copyright = u'2014, Read the Docs'
+project = u"Harvard90873's Docs"
+copyright = u'2021, Harvard90873'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
