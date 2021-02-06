@@ -35,6 +35,7 @@ Search
     binary_search(["foo", "bar", "baz"], "baz":)
 
 Output:
+
 .. code-block:: python
     False
     True
@@ -48,6 +49,7 @@ Sort
     selection_sort([c, e, d, b, f, a])
 
 Output:
+
 .. code-block:: python
     [1, 2, 3, 4, 5]
     [a, b, c, d, e, f]

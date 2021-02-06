@@ -5,6 +5,12 @@ The Author
 ==================================================
 
 
-Author: Harvard90873
-No college degree, just some random coder who wants to contribute to the world by coding.
+About me
+##########
+
+No college degree, just some random programmer 
+who wants to contribute to the world by coding. 
+Still a secondary student, but loves coding.
+
+
 Visit my `GitHub page <http://Harvard90873.github.io/>`_ for more information:
