@@ -1,4 +1,4 @@
-Python Algorithms 3x
+Python Data Structures 3x
 ==================================================
 
 Introduction
@@ -10,7 +10,7 @@ It contains the following data structures:
 
 - Binary Tree
 - Linked List
-- Hashmap
+- Hash table
 
 
 Installation
