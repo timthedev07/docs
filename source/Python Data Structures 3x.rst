@@ -28,7 +28,7 @@ Usage
 Binary Tree
 ******************
 
-Initialize and print the binary tree:
+Initialize and print the binary tree
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Node object contains 3 attributes:
@@ -77,9 +77,9 @@ Output:
 
 .. code-block:: python
 
-    "Foo's children: (None, None)"
-    "Bar's children: (<Node object at 0x7fc24f88ad30>, None)"
-    "Baz's children: (<Node object at 0x7fc24f88ad30>, <Node object at 0x7fc24f88ad90>)"
+    Foo's children: (None, None)
+    Bar's children: (<Node object at 0x7fc24f88ad30>, None)
+    Baz's children: (<Node object at 0x7fc24f88ad30>, <Node object at 0x7fc24f88ad90>)
 
 Notice that the node foo, just has a value, but does not have any children, so the return value is a set of two Nones.
 Whereas bar, has foo on its left, but nothing on the right, so the right attribute is None.
@@ -87,4 +87,25 @@ Finally, baz have both the two children filled with either foo and bar, so it re
 
 Linked list
 ***********
-``
+
+A linked list in our case, is implemented using a object that is somehow similar to a node
+It uses a class called ``Item``
+
+An Item has two attributes, value and pointer, where the value is the same as before, and the pointer is the next node in the linked list.
+
+Initialize and print the linked list.
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code-block:: python
+
+  from algorithms3x.linkedlist import Item
+  # linked list
+  root = Item(10)
+  root.appendChild(Item(17), Item(19))
+  root.display()
+
+Output:
+
+.. code-block:: shell
+
+  10 -> 17 -> 19
