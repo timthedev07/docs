@@ -37,6 +37,7 @@ Binary Tree
 Output:
 
 .. code-block:: python
+
     False
     True
 
@@ -51,5 +52,6 @@ Sort
 Output:
 
 .. code-block:: python
+
     [1, 2, 3, 4, 5]
     [a, b, c, d, e, f]
