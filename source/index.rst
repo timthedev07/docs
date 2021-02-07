@@ -28,15 +28,21 @@ And So On.........................
 
 .
 
+.
+
+.
 Hello World!
 ############
 
+This, is my ReadTheDocs, it is a complete guide to my projects
+and has all the information you NEED.
 
 
-Contents:
+My Projects:
+============
 
 .. toctree::
-   :maxdepth: 7
+   :maxdepth: 2
    :glob:
 
    *
