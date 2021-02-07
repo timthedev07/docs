@@ -3,8 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Read the Docs Template's documentation!
+Welcome to Harvard90873's ReadTheDocs!
 ==================================================
+
+.. code-block:: python
+   print("Hello, world!")
+
+.. code-block:: c
+   printf("Hello, world!");
+
+.. code-block:: java
+   System.out.println("Hello, world!");
+
+.. code-block:: javascript
+   console.log("Hello, world!");
+
+.....
+######
+
+Hello World!
+############
 
 Contents:
 
