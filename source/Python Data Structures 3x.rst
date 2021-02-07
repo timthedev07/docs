@@ -26,10 +26,10 @@ Usage
 ######
 
 Binary Tree
-************
+******************
 
 Initialize and print the binary tree:
-######################################
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The Node object contains 3 attributes:
 
@@ -60,7 +60,7 @@ Output:
         6
 
 Get Children
-##########
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To get the children of a node, use:
 
@@ -87,3 +87,4 @@ Finally, baz have both the two children filled with either foo and bar, so it re
 
 Linked list
 ***********
+``
