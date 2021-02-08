@@ -118,6 +118,7 @@ Next node
 If you go to the next node using the getNextNode() method:
 
 .. code-block:: python
+
   next = root.getNextNode()
   print(next)
 

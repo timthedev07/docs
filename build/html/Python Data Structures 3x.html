@@ -71,13 +71,13 @@ The package would keep updating as python itself updates to higher versions.</p>
 <p>The Node object contains 3 attributes:</p>
 <ul class="simple">
 <li><p>val (The actual value of the node, could be an integer, string, ect or even )</p></li>
-<li><p>left (A pointer to the one of its child)</p></li>
+<li><p>left (A pointer to one of its child)</p></li>
 <li><p>right (A pointer to the other one of its child)</p></li>
 </ul>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the required packages</span>
 <span class="kn">from</span> <span class="nn">dt_structures3x.binarytree</span> <span class="kn">import</span> <span class="n">Node</span> <span class="k">as</span> <span class="n">Node</span>
 <span class="c1"># Creates the tree, the Node class initialization taks 3 parameters</span>
-<span class="c1"># One is #1 is its value, #2</span>
+<span class="c1"># val, right, and left</span>
 <span class="n">tree</span>  <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">Node</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">Node</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">Node</span><span class="p">(</span><span class="mi">5</span><span class="p">)),</span> <span class="n">Node</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">Node</span><span class="p">(</span><span class="mi">9</span><span class="p">),</span> <span class="n">Node</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">Node</span><span class="p">(</span><span class="mi">6</span><span class="p">))))</span>
 <span class="c1"># Finally prints the tree</span>
 <span class="n">tree</span><span class="o">.</span><span class="n">print_tree</span><span class="p">()</span>
@@ -138,6 +138,10 @@ It uses a class called <code class="docutils literal notranslate"><span class="p
 <div class="section" id="next-node">
 <h4>Next node<a class="headerlink" href="#next-node" title="Permalink to this headline">¶</a></h4>
 <p>If you go to the next node using the getNextNode() method:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">next</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">getNextNode</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">)</span>
+</pre></div>
+</div>
 <p>We get:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">17</span>
 </pre></div>
@@ -155,7 +159,7 @@ It uses a class called <code class="docutils literal notranslate"><span class="p
 </div>
 <div class="section" id="append-children">
 <h4>Append children<a class="headerlink" href="#append-children" title="Permalink to this headline">¶</a></h4>
-<p>We can append a an element(or a child) to the linkedlist.
+<p>We can append element(s) to the linkedlist using the method appendChild().
 If the current item’s pointer is none, it would set the pointer to the new node,
 but if there is one, it would go all the way to the end of the linked list and append the item.</p>
 <p>See the example below:</p>

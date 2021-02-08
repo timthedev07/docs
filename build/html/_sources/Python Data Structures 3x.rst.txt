@@ -34,7 +34,7 @@ Initialize and print the binary tree
 The Node object contains 3 attributes:
 
 - val (The actual value of the node, could be an integer, string, ect or even )
-- left (A pointer to the one of its child)
+- left (A pointer to one of its child)
 - right (A pointer to the other one of its child)
 
 .. code-block:: python
@@ -42,7 +42,7 @@ The Node object contains 3 attributes:
     # Import the required packages
     from dt_structures3x.binarytree import Node as Node
     # Creates the tree, the Node class initialization taks 3 parameters
-    # One is #1 is its value, #2
+    # val, right, and left
     tree  = Node(3, Node(1, Node(1), Node(5)), Node(4, Node(9), Node(2, Node(6))))
     # Finally prints the tree
     tree.print_tree()
@@ -118,6 +118,7 @@ Next node
 If you go to the next node using the getNextNode() method:
 
 .. code-block:: python
+
   next = root.getNextNode()
   print(next)
 
@@ -145,7 +146,7 @@ We get:
 Append children
 ^^^^^^^^^^^^^^^^
 
-We can append a an element(or a child) to the linkedlist.
+We can append element(s) to the linkedlist using the method appendChild().
 If the current item's pointer is none, it would set the pointer to the new node,
 but if there is one, it would go all the way to the end of the linked list and append the item.
 
