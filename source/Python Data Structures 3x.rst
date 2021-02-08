@@ -85,6 +85,7 @@ Notice that the node foo, just has a value, but does not have any children, so t
 Whereas bar, has foo on its left, but nothing on the right, so the right attribute is None.
 Finally, baz have both the two children filled with either foo and bar, so it returs a set of them.
 
+
 Linked list
 ***********
 
