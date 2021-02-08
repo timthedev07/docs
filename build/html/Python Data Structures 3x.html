@@ -95,7 +95,7 @@ The package would keep updating as python itself updates to higher versions.</p>
 </div>
 </div>
 <div class="section" id="get-children">
-<h4>Get Children<a class="headerlink" href="#get-children" title="Permalink to this headline">¶</a></h4>
+<h4>Get children<a class="headerlink" href="#get-children" title="Permalink to this headline">¶</a></h4>
 <p>To get the children of a node, use:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s2">&quot;O&quot;</span><span class="p">)</span>
 <span class="n">bar</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s2">&quot;O&quot;</span><span class="p">,</span> <span class="n">foo</span><span class="p">)</span>
@@ -123,7 +123,7 @@ It uses a class called <code class="docutils literal notranslate"><span class="p
 <p>An Item has two attributes, value and pointer, where the value is the same as before, and the pointer is the next node in the linked list.</p>
 <div class="section" id="initialize-and-print-the-linked-list">
 <h4>Initialize and print the linked list.<a class="headerlink" href="#initialize-and-print-the-linked-list" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">algorithms3x.linkedlist</span> <span class="kn">import</span> <span class="n">Item</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">dt_structures3x.linkedlist</span> <span class="kn">import</span> <span class="n">Item</span>
 <span class="c1"># linked list</span>
 <span class="n">root</span> <span class="o">=</span> <span class="n">Item</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 <span class="n">root</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">Item</span><span class="p">(</span><span class="mi">17</span><span class="p">),</span> <span class="n">Item</span><span class="p">(</span><span class="mi">19</span><span class="p">))</span>
@@ -132,6 +132,42 @@ It uses a class called <code class="docutils literal notranslate"><span class="p
 </div>
 <p>Output:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="m">10</span> -&gt; <span class="m">17</span> -&gt; <span class="m">19</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="next-node">
+<h4>Next node<a class="headerlink" href="#next-node" title="Permalink to this headline">¶</a></h4>
+<p>If you go to the next node using the getNextNode() method:</p>
+<p>We get:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">17</span>
+</pre></div>
+</div>
+<p>Because the value of the next node is 17</p>
+<p>Now if we try to display the linked list:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">next</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>We get:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Linked list:
+<span class="m">17</span> -&gt; <span class="m">19</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="append-children">
+<h4>Append children<a class="headerlink" href="#append-children" title="Permalink to this headline">¶</a></h4>
+<p>We can append a an element(or a child) to the linkedlist.
+If the current item’s pointer is none, it would set the pointer to the new node,
+but if there is one, it would go all the way to the end of the linked list and append the item.</p>
+<p>See the example below:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">code</span><span class="o">&gt;</span>
+
+<span class="n">root</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">Item</span><span class="p">(</span><span class="s2">&quot;Foo&quot;</span><span class="p">))</span>
+<span class="n">root</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The output would be:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Linked list:
+<span class="m">10</span> -&gt; <span class="m">17</span> -&gt; <span class="m">19</span> -&gt; Foo
 </pre></div>
 </div>
 </div>
@@ -154,11 +190,13 @@ It uses a class called <code class="docutils literal notranslate"><span class="p
 <li><a class="reference internal" href="#usage">Usage</a><ul>
 <li><a class="reference internal" href="#binary-tree">Binary Tree</a><ul>
 <li><a class="reference internal" href="#initialize-and-print-the-binary-tree">Initialize and print the binary tree</a></li>
-<li><a class="reference internal" href="#get-children">Get Children</a></li>
+<li><a class="reference internal" href="#get-children">Get children</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#linked-list">Linked list</a><ul>
 <li><a class="reference internal" href="#initialize-and-print-the-linked-list">Initialize and print the linked list.</a></li>
+<li><a class="reference internal" href="#next-node">Next node</a></li>
+<li><a class="reference internal" href="#append-children">Append children</a></li>
 </ul>
 </li>
 </ul>
