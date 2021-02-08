@@ -6,7 +6,7 @@ Welcome to Harvard90873's ReadTheDocs!
    print("Hello, world!")
 
 
-.. code-block:: Objective C
+.. code-block:: c
 
    printf("Hello, world!");
 

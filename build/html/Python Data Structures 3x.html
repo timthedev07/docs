@@ -66,21 +66,75 @@ The package would keep updating as python itself updates to higher versions.</p>
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="binary-tree">
 <h3>Binary Tree<a class="headerlink" href="#binary-tree" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">algorithms3x.search</span> <span class="kn">import</span> <span class="n">linear_search</span><span class="p">,</span> <span class="n">binary_search</span>
-<span class="n">linear_search</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="mi">4</span><span class="p">)</span>
-<span class="n">binary_search</span><span class="p">([</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="p">],</span> <span class="s2">&quot;baz&quot;</span><span class="p">:)</span>
+<div class="section" id="initialize-and-print-the-binary-tree">
+<h4>Initialize and print the binary tree<a class="headerlink" href="#initialize-and-print-the-binary-tree" title="Permalink to this headline">¶</a></h4>
+<p>The Node object contains 3 attributes:</p>
+<ul class="simple">
+<li><p>val (The actual value of the node, could be an integer, string, ect or even )</p></li>
+<li><p>left (A pointer to the one of its child)</p></li>
+<li><p>right (A pointer to the other one of its child)</p></li>
+</ul>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import the required packages</span>
+<span class="kn">from</span> <span class="nn">dt_structures3x.binarytree</span> <span class="kn">import</span> <span class="n">Node</span> <span class="k">as</span> <span class="n">Node</span>
+<span class="c1"># Creates the tree, the Node class initialization taks 3 parameters</span>
+<span class="c1"># One is #1 is its value, #2</span>
+<span class="n">tree</span>  <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">Node</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">Node</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">Node</span><span class="p">(</span><span class="mi">5</span><span class="p">)),</span> <span class="n">Node</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">Node</span><span class="p">(</span><span class="mi">9</span><span class="p">),</span> <span class="n">Node</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">Node</span><span class="p">(</span><span class="mi">6</span><span class="p">))))</span>
+<span class="c1"># Finally prints the tree</span>
+<span class="n">tree</span><span class="o">.</span><span class="n">print_tree</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Output:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>  _3_
+ /   <span class="se">\</span>
+ <span class="m">1</span>   4_
+/ <span class="se">\ </span>/  <span class="se">\</span>
+<span class="m">1</span> <span class="m">5</span> <span class="m">9</span>   <span class="m">2</span>
+    /
+    <span class="m">6</span>
+</pre></div>
 </div>
-<div class="section" id="sort">
-<h3>Sort<a class="headerlink" href="#sort" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">algorithms3x.sort</span> <span class="kn">import</span> <span class="n">bubble_sort</span><span class="p">,</span> <span class="n">selection_sort</span>
-<span class="n">bubble_sort</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-<span class="n">selection_sort</span><span class="p">([</span><span class="n">c</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">a</span><span class="p">])</span>
+</div>
+<div class="section" id="get-children">
+<h4>Get Children<a class="headerlink" href="#get-children" title="Permalink to this headline">¶</a></h4>
+<p>To get the children of a node, use:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s2">&quot;O&quot;</span><span class="p">)</span>
+<span class="n">bar</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s2">&quot;O&quot;</span><span class="p">,</span> <span class="n">foo</span><span class="p">)</span>
+<span class="n">baz</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s2">&quot;O&quot;</span><span class="p">,</span> <span class="n">foo</span><span class="p">,</span> <span class="n">bar</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Foo&#39;s children: </span><span class="si">{</span><span class="n">foo</span><span class="o">.</span><span class="n">get_children</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Bar&#39;s children: </span><span class="si">{</span><span class="n">bar</span><span class="o">.</span><span class="n">get_children</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Baz&#39;s children: </span><span class="si">{</span><span class="n">baz</span><span class="o">.</span><span class="n">get_children</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Output:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Foo</span><span class="s1">&#39;s children: (None, None)</span>
+<span class="n">Bar</span><span class="s1">&#39;s children: (&lt;Node object at 0x7fc24f88ad30&gt;, None)</span>
+<span class="n">Baz</span><span class="s1">&#39;s children: (&lt;Node object at 0x7fc24f88ad30&gt;, &lt;Node object at 0x7fc24f88ad90&gt;)</span>
+</pre></div>
+</div>
+<p>Notice that the node foo, just has a value, but does not have any children, so the return value is a set of two Nones.
+Whereas bar, has foo on its left, but nothing on the right, so the right attribute is None.
+Finally, baz have both the two children filled with either foo and bar, so it returs a set of them.</p>
+</div>
+</div>
+<div class="section" id="linked-list">
+<h3>Linked list<a class="headerlink" href="#linked-list" title="Permalink to this headline">¶</a></h3>
+<p>A linked list in our case, is implemented using a object that is somehow similar to a node
+It uses a class called <code class="docutils literal notranslate"><span class="pre">Item</span></code></p>
+<p>An Item has two attributes, value and pointer, where the value is the same as before, and the pointer is the next node in the linked list.</p>
+<div class="section" id="initialize-and-print-the-linked-list">
+<h4>Initialize and print the linked list.<a class="headerlink" href="#initialize-and-print-the-linked-list" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">algorithms3x.linkedlist</span> <span class="kn">import</span> <span class="n">Item</span>
+<span class="c1"># linked list</span>
+<span class="n">root</span> <span class="o">=</span> <span class="n">Item</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">root</span><span class="o">.</span><span class="n">appendChild</span><span class="p">(</span><span class="n">Item</span><span class="p">(</span><span class="mi">17</span><span class="p">),</span> <span class="n">Item</span><span class="p">(</span><span class="mi">19</span><span class="p">))</span>
+<span class="n">root</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="m">10</span> -&gt; <span class="m">17</span> -&gt; <span class="m">19</span>
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -98,8 +152,15 @@ The package would keep updating as python itself updates to higher versions.</p>
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#usage">Usage</a><ul>
-<li><a class="reference internal" href="#binary-tree">Binary Tree</a></li>
-<li><a class="reference internal" href="#sort">Sort</a></li>
+<li><a class="reference internal" href="#binary-tree">Binary Tree</a><ul>
+<li><a class="reference internal" href="#initialize-and-print-the-binary-tree">Initialize and print the binary tree</a></li>
+<li><a class="reference internal" href="#get-children">Get Children</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#linked-list">Linked list</a><ul>
+<li><a class="reference internal" href="#initialize-and-print-the-linked-list">Initialize and print the linked list.</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

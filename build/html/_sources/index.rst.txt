@@ -18,21 +18,32 @@ Welcome to Harvard90873's ReadTheDocs!
 
    console.log("Hello, world!");
 
-And So On
-######$$$$
+And So On.........................
+
+.
+
+.
+
+.
+
+.
+
+.
+
+.
 
 Hello World!
 ############
 
-Contents:
+This, is my ReadTheDocs, it is a complete guide to my projects
+and has all the information you NEED.
+
+
+My Projects:
+============
 
 .. toctree::
-   :maxdepth: 7
+   :maxdepth: 2
    :glob:
 
    *
-
-
-
-
-
