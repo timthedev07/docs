@@ -59,7 +59,7 @@ Output:
         /
         6
 
-Get Children
+Get children
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To get the children of a node, use:
@@ -98,7 +98,7 @@ Initialize and print the linked list.
 
 .. code-block:: python
 
-  from algorithms3x.linkedlist import Item
+  from dt_structures3x.linkedlist import Item
   # linked list
   root = Item(10)
   root.appendChild(Item(17), Item(19))
@@ -109,3 +109,57 @@ Output:
 .. code-block:: shell
 
   10 -> 17 -> 19
+
+Next node
+^^^^^^^^^^^^^^
+
+
+If you go to the next node using the getNextNode() method:
+
+.. code-block:: python
+  next = root.getNextNode()
+  print(next)
+
+We get:
+
+.. code-block:: python
+
+  17
+
+Because the value of the next node is 17
+
+Now if we try to display the linked list:
+
+.. code-block:: python
+
+  next.display()
+
+We get:
+
+.. code-block:: shell
+
+  Linked list:
+  17 -> 19
+
+Append children
+^^^^^^^^^^^^^^^^
+
+We can append a an element(or a child) to the linkedlist.
+If the current item's pointer is none, it would set the pointer to the new node,
+but if there is one, it would go all the way to the end of the linked list and append the item.
+
+See the example below:
+
+.. code-block:: python
+
+  <code>
+
+  root.appendChild(Item("Foo"))
+  root.display()
+
+The output would be:
+
+.. code-block:: shell
+
+  Linked list:
+  10 -> 17 -> 19 -> Foo
