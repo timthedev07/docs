@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python And-Or-Not Concept Helper for beginners &#8212; Harvard90873&#39;s Docs 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The Author" href="authors.html" />
+    <link rel="prev" title="Python Data Structures 3x" href="Python%20Data%20Structures%203x.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="authors.html" title="The Author"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Python%20Data%20Structures%203x.html" title="Python Data Structures 3x"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Harvard90873&#39;s Docs 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Python And-Or-Not Concept Helper for beginners</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="python-and-or-not-concept-helper-for-beginners">
+<h1>Python And-Or-Not Concept Helper for beginners<a class="headerlink" href="#python-and-or-not-concept-helper-for-beginners" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>The <strong>and-or-not</strong> is a python package that teaches you the basic concepts of the logical operators(and, or and not). The package would keep updating as python itself updates to higher versions.</p>
+<p>Contains the following logical operators:</p>
+<ul class="simple">
+<li><p>And</p></li>
+<li><p>Or</p></li>
+<li><p>Not</p></li>
+</ul>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>If not already, <a class="reference external" href="https://pip.pypa.io/en/stable/installing/">install pip</a>.</p>
+<p>Install the package with <code class="docutils literal notranslate"><span class="pre">pip</span></code> or <code class="docutils literal notranslate"><span class="pre">pip3</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="ow">and</span><span class="o">-</span><span class="ow">or</span><span class="o">-</span><span class="ow">not</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p><strong>ATTENTION</strong></p>
+<p><em>Beginners don’t have to worry about the syntax, you can simply copy and paste the following code and replace the expressions.
+PLEASE NOTE THAT IT ONLY SUPPORTS == AND != OPERATOR JUST TO GET YOU A SENSE OF LOGICAL OPERATORS(cos i’m lazy:) )</em></p>
+<div class="section" id="and">
+<h3>And<a class="headerlink" href="#and" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="initialize-and-display">
+<h4>Initialize and Display<a class="headerlink" href="#initialize-and-display" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">and_or_not.main</span> <span class="kn">import</span> <span class="n">And</span> <span class="c1"># Import the package</span>
+<span class="c1"># Initialize object with 3 expressions</span>
+<span class="n">myAnd</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="s2">&quot;1 != 4&quot;</span><span class="p">,</span> <span class="s2">&quot;FOO == Bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz != BAZ&quot;</span><span class="p">)</span>
+<span class="c1"># Display the expression in a pythonic way</span>
+<span class="n">myAnd</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">!=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">FOO</span> <span class="o">==</span> <span class="n">Bar</span> <span class="ow">and</span> <span class="n">baz</span> <span class="o">!=</span> <span class="n">BAZ</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="print-out-the-explanation">
+<h4>Print out the explanation<a class="headerlink" href="#print-out-the-explanation" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print out the explanation</span>
+<span class="n">myAnd</span><span class="o">.</span><span class="n">explain</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The output would be a bunch of explanation, install to see more.</p>
+</div>
+<div class="section" id="return-the-final-result-if-familiar-with-return-values">
+<h4>Return the final result (If familiar with return values)<a class="headerlink" href="#return-the-final-result-if-familiar-with-return-values" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">myAnd</span><span class="o">.</span><span class="n">result</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>False
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="or">
+<h3>Or<a class="headerlink" href="#or" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h4>Initialize and Display<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">and_or_not.main</span> <span class="kn">import</span> <span class="n">Or</span> <span class="c1"># Import the package</span>
+<span class="c1"># Initialize object with 3 expressions</span>
+<span class="n">myOr</span> <span class="o">=</span> <span class="n">Or</span><span class="p">(</span><span class="s2">&quot;1 != 4&quot;</span><span class="p">,</span> <span class="s2">&quot;FOO == Bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz != BAZ&quot;</span><span class="p">)</span>
+<span class="c1"># Display the expression in a pythonic way</span>
+<span class="n">myOr</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">!=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">FOO</span> <span class="o">==</span> <span class="n">Bar</span> <span class="ow">and</span> <span class="n">baz</span> <span class="o">!=</span> <span class="n">BAZ</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h4>Print out the explanation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print out the explanation</span>
+<span class="n">myOr</span><span class="o">.</span><span class="n">explain</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The output would be a bunch of explanation, install to see more.</p>
+</div>
+<div class="section" id="id3">
+<h4>Return the final result (If familiar with return values)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">myOr</span><span class="o">.</span><span class="n">result</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>True
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="not">
+<h3>Not<a class="headerlink" href="#not" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="initialize-and-show-the-expression">
+<h4>Initialize and show the expression<a class="headerlink" href="#initialize-and-show-the-expression" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print out the expression in a pythonic way</span>
+<span class="n">myAnd</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="explanation">
+<h4>Explanation<a class="headerlink" href="#explanation" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print out the explanation</span>
+<span class="n">myAnd</span><span class="o">.</span><span class="n">explain</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Python And-Or-Not Concept Helper for beginners</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#usage">Usage</a><ul>
+<li><a class="reference internal" href="#and">And</a><ul>
+<li><a class="reference internal" href="#initialize-and-display">Initialize and Display</a></li>
+<li><a class="reference internal" href="#print-out-the-explanation">Print out the explanation</a></li>
+<li><a class="reference internal" href="#return-the-final-result-if-familiar-with-return-values">Return the final result (If familiar with return values)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#or">Or</a><ul>
+<li><a class="reference internal" href="#id1">Initialize and Display</a></li>
+<li><a class="reference internal" href="#id2">Print out the explanation</a></li>
+<li><a class="reference internal" href="#id3">Return the final result (If familiar with return values)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#not">Not</a><ul>
+<li><a class="reference internal" href="#initialize-and-show-the-expression">Initialize and show the expression</a></li>
+<li><a class="reference internal" href="#explanation">Explanation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Python%20Data%20Structures%203x.html"
+                        title="previous chapter">Python Data Structures 3x</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="authors.html"
+                        title="next chapter">The Author</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/andornot.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="authors.html" title="The Author"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Python%20Data%20Structures%203x.html" title="Python Data Structures 3x"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Harvard90873&#39;s Docs 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Python And-Or-Not Concept Helper for beginners</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Harvard90873.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+    </div>
+  </body>
+</html>
