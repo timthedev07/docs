@@ -165,3 +165,8 @@ The output would be:
 
   Linked list:
   10 -> 17 -> 19 -> Foo
+
+Hash tables
+*************
+
+Initialize and print the hash table
