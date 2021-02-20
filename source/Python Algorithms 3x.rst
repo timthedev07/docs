@@ -4,7 +4,7 @@ Python Algorithms 3x
 Introduction
 ############
 Python sorting/searching algorithms
-The **algorithms3x** is a python package with 4 sorting/searching algorithms. The package would keep updating as python itself updates to higher versions.
+The **algorithms3x** is a python package with 5 sorting/searching algorithms. The package would keep updating as python itself updates to higher versions.
 
 It contains the following algorithms:
 
@@ -12,6 +12,7 @@ It contains the following algorithms:
 - Bubble sort
 - Linear search
 - Binary search
+- Merge sort
 
 Installation
 ############
@@ -45,9 +46,12 @@ Sort
 ************
 .. code-block:: python
 
-    from algorithms3x.sort import bubble_sort, selection_sort
+    from algorithms3x.sort import bubble_sort, selection_sort, merge_sort
     bubble_sort([4, 2, 5, 3, 1])
-    selection_sort([c, e, d, b, f, a])
+    selection_sort(['c', 'e', 'd', 'b', 'f', 'a'])
+    # Congratulations, you have discovered the secret!
+    # Merge sort is the most efficient sorting algorithm!
+    merge_sort(["foo", "bar", "baz"])
 
 Output:
 
@@ -55,4 +59,5 @@ Output:
 
     [1, 2, 3, 4, 5]
     ['a', 'b', 'c', 'd', 'e', 'f']
+    ["bar", "baz", "foo"]
 

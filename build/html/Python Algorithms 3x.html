@@ -46,13 +46,14 @@
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Python sorting/searching algorithms
-The <strong>algorithms3x</strong> is a python package with 4 sorting/searching algorithms. The package would keep updating as python itself updates to higher versions.</p>
+The <strong>algorithms3x</strong> is a python package with 5 sorting/searching algorithms. The package would keep updating as python itself updates to higher versions.</p>
 <p>It contains the following algorithms:</p>
 <ul class="simple">
 <li><p>Selection sort</p></li>
 <li><p>Bubble sort</p></li>
 <li><p>Linear search</p></li>
 <li><p>Binary search</p></li>
+<li><p>Merge sort</p></li>
 </ul>
 </div>
 <div class="section" id="installation">
@@ -80,14 +81,18 @@ The <strong>algorithms3x</strong> is a python package with 4 sorting/searching a
 </div>
 <div class="section" id="sort">
 <h3>Sort<a class="headerlink" href="#sort" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">algorithms3x.sort</span> <span class="kn">import</span> <span class="n">bubble_sort</span><span class="p">,</span> <span class="n">selection_sort</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">algorithms3x.sort</span> <span class="kn">import</span> <span class="n">bubble_sort</span><span class="p">,</span> <span class="n">selection_sort</span><span class="p">,</span> <span class="n">merge_sort</span>
 <span class="n">bubble_sort</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-<span class="n">selection_sort</span><span class="p">([</span><span class="n">c</span><span class="p">,</span> <span class="n">e</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">a</span><span class="p">])</span>
+<span class="n">selection_sort</span><span class="p">([</span><span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;a&#39;</span><span class="p">])</span>
+<span class="c1"># Congratulations, you have discovered the secret!</span>
+<span class="c1"># Merge sort is the most efficient sorting algorithm!</span>
+<span class="n">merge_sort</span><span class="p">([</span><span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="p">])</span>
 </pre></div>
 </div>
 <p>Output:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">]</span>
+<span class="p">[</span><span class="s2">&quot;bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz&quot;</span><span class="p">,</span> <span class="s2">&quot;foo&quot;</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -160,7 +165,7 @@ The <strong>algorithms3x</strong> is a python package with 4 sorting/searching a
     </div>
     <div class="footer" role="contentinfo">
         &#169; Copyright 2021, Harvard90873.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.4.3.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.1.
     </div>
   </body>
 </html>
