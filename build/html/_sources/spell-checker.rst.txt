@@ -4,7 +4,7 @@ Python Spell Checker - Faster than you blinking speed.
 Introduction
 ############
 The **spell checker** is a python package that can check your spelling. It supports 5 languages!
-For someone who is considering interating the entire dictionary to find a single word, this package will save your life! (I mean you so that won't get carpal tunnel when coding the big boi, you might not get the joke, alright, whatever, nevermind...)
+For someone who is considering interating the entire dictionary to find a single word, this package will save your life! (I mean so that you won't get carpal tunnel when coding the big boi, you might not get the joke, alright, whatever, nevermind...)
 
 It contains the following languages:
 

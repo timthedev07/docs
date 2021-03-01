@@ -33,7 +33,7 @@ Initialize and print the binary tree
 
 The Node object contains 3 attributes:
 
-- val (The actual value of the node, could be an integer, string, ect or even )
+- val (The actual value of the node, could be an integer, string, ect or even another tree)
 - left (A pointer to one of its child)
 - right (A pointer to the other one of its child)
 
