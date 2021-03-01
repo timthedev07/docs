@@ -3,8 +3,8 @@ Python Algorithms 3x
 
 Introduction
 ############
-Python sorting/searching algorithms
-The **algorithms3x** is a python package with 5 sorting/searching algorithms. The package would keep updating as python itself updates to higher versions.
+
+**algorithms3x** is a python package with 5 sorting/searching algorithms. The package would keep updating as python itself updates to higher versions.
 
 It contains the following algorithms:
 
