@@ -45,7 +45,7 @@
 <h1>Python And-Or-Not Concept Helper for beginners<a class="headerlink" href="#python-and-or-not-concept-helper-for-beginners" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>The <strong>and-or-not</strong> is a python package that teaches you the basic concepts of the logical operators(and, or and not). The package would keep updating as python itself updates to higher versions.</p>
+<p><strong>and-or-not</strong> is a python package that teaches you the basic concepts of the logical operators(<cite>and</cite>, <cite>or</cite> and <cite>not</cite>). The package would keep updating as python itself updates to higher versions.</p>
 <p>Contains the following logical operators:</p>
 <ul class="simple">
 <li><p>And</p></li>
@@ -65,25 +65,26 @@
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <p><strong>ATTENTION</strong></p>
 <p><em>Beginners don’t have to worry about the syntax, you can simply copy and paste the following code and replace the expressions.
-PLEASE NOTE THAT IT ONLY SUPPORTS == AND != OPERATOR JUST TO GET YOU A SENSE OF LOGICAL OPERATORS(cos i’m lazy:) )</em></p>
-<div class="section" id="and">
-<h3>And<a class="headerlink" href="#and" title="Permalink to this headline">¶</a></h3>
+PLEASE NOTE THAT IT ONLY SUPPORTS == AND != OPERATORS JUST TO GET YOU A SENSE OF LOGICAL OPERATORS(cos i’m lazy:) )</em>
+AND WHEN INCLUDING STRINGS IN AN EXPRESSION, PLEASE PLEASE USE SINGLE QUOTES!!!!!
+And
+<strong>********</strong></p>
 <div class="section" id="initialize-and-display">
-<h4>Initialize and Display<a class="headerlink" href="#initialize-and-display" title="Permalink to this headline">¶</a></h4>
+<h3>Initialize and Display<a class="headerlink" href="#initialize-and-display" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">and_or_not.main</span> <span class="kn">import</span> <span class="n">And</span> <span class="c1"># Import the package</span>
 <span class="c1"># Initialize object with 3 expressions</span>
-<span class="n">myAnd</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="s2">&quot;1 != 4&quot;</span><span class="p">,</span> <span class="s2">&quot;FOO == Bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz != BAZ&quot;</span><span class="p">)</span>
+<span class="n">myAnd</span> <span class="o">=</span> <span class="n">And</span><span class="p">(</span><span class="s2">&quot;1 != 4&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;FOO&#39; == &#39;Bar&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;baz&#39; != &#39;BAZ&#39;&quot;</span><span class="p">)</span>
 <span class="c1"># Display the expression in a pythonic way</span>
 <span class="n">myAnd</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Output:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">!=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">FOO</span> <span class="o">==</span> <span class="n">Bar</span> <span class="ow">and</span> <span class="n">baz</span> <span class="o">!=</span> <span class="n">BAZ</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">!=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="s1">&#39;FOO&#39;</span> <span class="o">==</span> <span class="n">Bar</span> <span class="ow">and</span> <span class="s1">&#39;baz&#39;</span> <span class="o">!=</span> <span class="s1">&#39;BAZ&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="print-out-the-explanation">
-<h4>Print out the explanation<a class="headerlink" href="#print-out-the-explanation" title="Permalink to this headline">¶</a></h4>
+<h3>Print out the explanation<a class="headerlink" href="#print-out-the-explanation" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print out the explanation</span>
 <span class="n">myAnd</span><span class="o">.</span><span class="n">explain</span><span class="p">()</span>
 </pre></div>
@@ -91,33 +92,33 @@ PLEASE NOTE THAT IT ONLY SUPPORTS == AND != OPERATOR JUST TO GET YOU A SENSE OF 
 <p>The output would be a bunch of explanation, install to see more.</p>
 </div>
 <div class="section" id="return-the-final-result-if-familiar-with-return-values">
-<h4>Return the final result (If familiar with return values)<a class="headerlink" href="#return-the-final-result-if-familiar-with-return-values" title="Permalink to this headline">¶</a></h4>
+<h3>Return the final result (If familiar with return values)<a class="headerlink" href="#return-the-final-result-if-familiar-with-return-values" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">myAnd</span><span class="o">.</span><span class="n">result</span><span class="p">())</span>
 </pre></div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>False
 </pre></div>
 </div>
-</div>
-</div>
 <div class="section" id="or">
-<h3>Or<a class="headerlink" href="#or" title="Permalink to this headline">¶</a></h3>
+<h4>Or<a class="headerlink" href="#or" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
 <div class="section" id="id1">
-<h4>Initialize and Display<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<h3>Initialize and Display<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">and_or_not.main</span> <span class="kn">import</span> <span class="n">Or</span> <span class="c1"># Import the package</span>
 <span class="c1"># Initialize object with 3 expressions</span>
-<span class="n">myOr</span> <span class="o">=</span> <span class="n">Or</span><span class="p">(</span><span class="s2">&quot;1 != 4&quot;</span><span class="p">,</span> <span class="s2">&quot;FOO == Bar&quot;</span><span class="p">,</span> <span class="s2">&quot;baz != BAZ&quot;</span><span class="p">)</span>
+<span class="n">myOr</span> <span class="o">=</span> <span class="n">Or</span><span class="p">(</span><span class="s2">&quot;1 != 4&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;FOO&#39; == &#39;Bar&#39;&quot;</span><span class="p">,</span> <span class="s2">&quot;&#39;baz&#39; != &#39;BAZ&#39;&quot;</span><span class="p">)</span>
 <span class="c1"># Display the expression in a pythonic way</span>
 <span class="n">myOr</span><span class="o">.</span><span class="n">display</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>Output:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">!=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="n">FOO</span> <span class="o">==</span> <span class="n">Bar</span> <span class="ow">and</span> <span class="n">baz</span> <span class="o">!=</span> <span class="n">BAZ</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">1</span> <span class="o">!=</span> <span class="mi">4</span> <span class="ow">and</span> <span class="s1">&#39;FOO&#39;</span> <span class="o">==</span> <span class="s1">&#39;Bar&#39;</span> <span class="ow">and</span> <span class="s1">&#39;baz&#39;</span> <span class="o">!=</span> <span class="s1">&#39;BAZ&#39;</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="id2">
-<h4>Print out the explanation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<h3>Print out the explanation<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print out the explanation</span>
 <span class="n">myOr</span><span class="o">.</span><span class="n">explain</span><span class="p">()</span>
 </pre></div>
@@ -125,30 +126,28 @@ PLEASE NOTE THAT IT ONLY SUPPORTS == AND != OPERATOR JUST TO GET YOU A SENSE OF 
 <p>The output would be a bunch of explanation, install to see more.</p>
 </div>
 <div class="section" id="id3">
-<h4>Return the final result (If familiar with return values)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<h3>Return the final result (If familiar with return values)<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">myOr</span><span class="o">.</span><span class="n">result</span><span class="p">())</span>
 </pre></div>
 </div>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
-</div>
-</div>
 <div class="section" id="not">
-<h3>Not<a class="headerlink" href="#not" title="Permalink to this headline">¶</a></h3>
+<h4>Not<a class="headerlink" href="#not" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
 <div class="section" id="initialize-and-show-the-expression">
-<h4>Initialize and show the expression<a class="headerlink" href="#initialize-and-show-the-expression" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print out the expression in a pythonic way</span>
-<span class="n">myAnd</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<h3>Initialize and show the expression<a class="headerlink" href="#initialize-and-show-the-expression" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">and_or_not.main</span> <span class="kn">import</span> <span class="n">Not</span> <span class="c1"># import the package</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="explanation">
-<h4>Explanation<a class="headerlink" href="#explanation" title="Permalink to this headline">¶</a></h4>
+<h3>Explanation<a class="headerlink" href="#explanation" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="c1"># Print out the explanation</span>
-<span class="n">myAnd</span><span class="o">.</span><span class="n">explain</span><span class="p">()</span>
+<span class="n">Not</span><span class="p">(</span><span class="s2">&quot;Alice == &#39;Bob&#39;&quot;</span><span class="p">)</span>
 </pre></div>
-</div>
 </div>
 </div>
 </div>
@@ -167,23 +166,20 @@ PLEASE NOTE THAT IT ONLY SUPPORTS == AND != OPERATOR JUST TO GET YOU A SENSE OF 
 <li><a class="reference internal" href="#introduction">Introduction</a></li>
 <li><a class="reference internal" href="#installation">Installation</a></li>
 <li><a class="reference internal" href="#usage">Usage</a><ul>
-<li><a class="reference internal" href="#and">And</a><ul>
 <li><a class="reference internal" href="#initialize-and-display">Initialize and Display</a></li>
 <li><a class="reference internal" href="#print-out-the-explanation">Print out the explanation</a></li>
-<li><a class="reference internal" href="#return-the-final-result-if-familiar-with-return-values">Return the final result (If familiar with return values)</a></li>
+<li><a class="reference internal" href="#return-the-final-result-if-familiar-with-return-values">Return the final result (If familiar with return values)</a><ul>
+<li><a class="reference internal" href="#or">Or</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#or">Or</a><ul>
 <li><a class="reference internal" href="#id1">Initialize and Display</a></li>
 <li><a class="reference internal" href="#id2">Print out the explanation</a></li>
-<li><a class="reference internal" href="#id3">Return the final result (If familiar with return values)</a></li>
+<li><a class="reference internal" href="#id3">Return the final result (If familiar with return values)</a><ul>
+<li><a class="reference internal" href="#not">Not</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#not">Not</a><ul>
 <li><a class="reference internal" href="#initialize-and-show-the-expression">Initialize and show the expression</a></li>
 <li><a class="reference internal" href="#explanation">Explanation</a></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>

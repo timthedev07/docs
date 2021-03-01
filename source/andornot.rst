@@ -3,7 +3,7 @@ Python And-Or-Not Concept Helper for beginners
 
 Introduction
 ############
-The **and-or-not** is a python package that teaches you the basic concepts of the logical operators(and, or and not). The package would keep updating as python itself updates to higher versions.
+**and-or-not** is a python package that teaches you the basic concepts of the logical operators(`and`, `or` and `not`). The package would keep updating as python itself updates to higher versions.
 
 Contains the following logical operators:
 
@@ -28,8 +28,8 @@ Usage
 **ATTENTION**
 
 *Beginners don't have to worry about the syntax, you can simply copy and paste the following code and replace the expressions.
-PLEASE NOTE THAT IT ONLY SUPPORTS == AND != OPERATOR JUST TO GET YOU A SENSE OF LOGICAL OPERATORS(cos i'm lazy:) )*
-
+PLEASE NOTE THAT IT ONLY SUPPORTS == AND != OPERATORS JUST TO GET YOU A SENSE OF LOGICAL OPERATORS(cos i'm lazy:) )*
+AND WHEN INCLUDING STRINGS IN AN EXPRESSION, PLEASE PLEASE USE SINGLE QUOTES!!!!!
 And
 ************
 
@@ -40,7 +40,7 @@ Initialize and Display
 
   from and_or_not.main import And # Import the package
   # Initialize object with 3 expressions
-  myAnd = And("1 != 4", "FOO == Bar", "baz != BAZ")
+  myAnd = And("1 != 4", "'FOO' == 'Bar'", "'baz' != 'BAZ'")
   # Display the expression in a pythonic way
   myAnd.display()
 
@@ -48,7 +48,7 @@ Output:
 
 .. code-block:: python
 
-    1 != 4 and FOO == Bar and baz != BAZ
+    1 != 4 and 'FOO' == Bar and 'baz' != 'BAZ'
 
 Print out the explanation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -81,7 +81,7 @@ Initialize and Display
 
   from and_or_not.main import Or # Import the package
   # Initialize object with 3 expressions
-  myOr = Or("1 != 4", "FOO == Bar", "baz != BAZ")
+  myOr = Or("1 != 4", "'FOO' == 'Bar'", "'baz' != 'BAZ'")
   # Display the expression in a pythonic way
   myOr.display()
 
@@ -89,7 +89,7 @@ Output:
 
 .. code-block:: python
 
-    1 != 4 and FOO == Bar and baz != BAZ
+    1 != 4 and 'FOO' == 'Bar' and 'baz' != 'BAZ'
 
 Print out the explanation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -121,8 +121,7 @@ Initialize and show the expression
 
 .. code-block:: py
 
-  # Print out the expression in a pythonic way
-  myAnd.show()
+  from and_or_not.main import Not # import the package
 
 Explanation
 ^^^^^^^^^^^^^^
@@ -130,4 +129,4 @@ Explanation
 .. code-block:: py
 
   # Print out the explanation
-  myAnd.explain()
+  Not("Alice == 'Bob'")

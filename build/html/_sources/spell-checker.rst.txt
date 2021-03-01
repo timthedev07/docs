@@ -1,4 +1,4 @@
-Python Spell Checker - Faster than you blinking speed.
+Python Spell Checker - Faster than your blinking speed.
 =======================================================
 
 Introduction
