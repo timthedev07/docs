@@ -83,13 +83,13 @@ Output:
 
 Notice that the node foo, just has a value, but does not have any children, so the return value is a set of two Nones.
 Whereas bar, has foo on its left, but nothing on the right, so the right attribute is None.
-Finally, baz have both the two children filled with either foo and bar, so it returs a set of them.
+Finally, baz have both the two children filled with either foo and bar, so it returns a set of the nodes.
 
 
 Linked list
 ***********
 
-A linked list in our case, is implemented using a object that is somehow similar to a node
+A linked list in our case, is implemented using an object that is somehow similar to a node.
 It uses a class called ``Item``
 
 An Item has two attributes, value and pointer, where the value is the same as before, and the pointer is the next node in the linked list.
@@ -170,3 +170,5 @@ Hash tables
 *************
 
 Initialize and print the hash table
+...
+Anyways, I'm lazy.
