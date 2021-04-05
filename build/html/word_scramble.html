@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python super efficient word scramble finder &#8212; Harvard90873&#39;s Docs 1.0 documentation</title>
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Python Spell Checker - Faster than your blinking speed." href="spell-checker.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="spell-checker.html" title="Python Spell Checker - Faster than your blinking speed."
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Harvard90873&#39;s Docs 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Python super efficient word scramble finder</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="python-super-efficient-word-scramble-finder">
+<h1>Python super efficient word scramble finder<a class="headerlink" href="#python-super-efficient-word-scramble-finder" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>word scramble is a python package that looks for all possibilities given a scrambled word. The package would keep updating as python itself updates to higher versions.</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>If not already, <a class="reference external" href="https://pip.pypa.io/en/stable/installing/">install pip</a>.</p>
+<p>Install the package with <code class="docutils literal notranslate"><span class="pre">pip</span></code> or <code class="docutils literal notranslate"><span class="pre">pip3</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">word</span><span class="o">-</span><span class="n">scramble</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="search">
+<h3>Search<a class="headerlink" href="#search" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">wsfinder</span> <span class="kn">import</span> <span class="n">main</span>
+<span class="c1"># Need to provide the language</span>
+<span class="n">finder</span> <span class="o">=</span> <span class="n">main</span><span class="o">.</span><span class="n">Finder</span><span class="p">(</span><span class="s2">&quot;english&quot;</span><span class="p">)</span>
+<span class="n">scrambled_words</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">&quot;taurdesta&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;achwt&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;ilane&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;alger&quot;</span><span class="p">,</span>
+    <span class="p">]</span>
+<span class="n">res</span> <span class="o">=</span> <span class="p">{</span><span class="n">word</span><span class="p">:</span><span class="n">finder</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">word</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">scrambled_words</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="s1">&#39;taurdesta&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;saturated&#39;</span><span class="p">],</span>
+<span class="s1">&#39;achwt&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;watch&#39;</span><span class="p">],</span>
+<span class="s1">&#39;ilane&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;liane&#39;</span><span class="p">,</span> <span class="s1">&#39;laine&#39;</span><span class="p">,</span> <span class="s1">&#39;elian&#39;</span><span class="p">,</span> <span class="s1">&#39;anile&#39;</span><span class="p">,</span> <span class="s1">&#39;aline&#39;</span><span class="p">,</span> <span class="s1">&#39;alien&#39;</span><span class="p">],</span><span class="s1">&#39;alger&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;regal&#39;</span><span class="p">,</span> <span class="s1">&#39;large&#39;</span><span class="p">,</span> <span class="s1">&#39;lager&#39;</span><span class="p">,</span> <span class="s1">&#39;glare&#39;</span><span class="p">,</span> <span class="s1">&#39;elgar&#39;</span><span class="p">,</span> <span class="s1">&#39;argle&#39;</span><span class="p">],</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Python super efficient word scramble finder</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a></li>
+<li><a class="reference internal" href="#installation">Installation</a></li>
+<li><a class="reference internal" href="#usage">Usage</a><ul>
+<li><a class="reference internal" href="#search">Search</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="spell-checker.html"
+                        title="previous chapter">Python Spell Checker - Faster than your blinking speed.</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/word_scramble.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="spell-checker.html" title="Python Spell Checker - Faster than your blinking speed."
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Harvard90873&#39;s Docs 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Python super efficient word scramble finder</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2021, Harvard90873.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.3.
+    </div>
+  </body>
+</html>
