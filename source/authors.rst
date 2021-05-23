@@ -10,4 +10,4 @@ who wants to contribute to the world by coding.
 Still a secondary student, but loves coding.
 
 
-Visit my `GitHub page <http://Harvard90873.github.io/>`_ for more information(and my portfolio!):
+Visit my `GitHub page <http://relentlessexploration.github.io/>`_ for more information(and my portfolio!):
