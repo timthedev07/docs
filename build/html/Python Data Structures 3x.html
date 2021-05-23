@@ -4,8 +4,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Python Data Structures 3x &#8212; Harvard90873&#39;s Docs 1.0 documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
+    <title>Python Data Structures 3x &#8212; RelentlessExploration&#39;s Docs 1.0 documentation</title>
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     
@@ -31,7 +32,7 @@
         <li class="right" >
           <a href="Python%20Algorithms%203x.html" title="Python Algorithms 3x"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Harvard90873&#39;s Docs 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">RelentlessExploration&#39;s Docs 1.0 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Python Data Structures 3x</a></li> 
       </ul>
     </div>  
@@ -41,9 +42,9 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="python-data-structures-3x">
+  <section id="python-data-structures-3x">
 <h1>Python Data Structures 3x<a class="headerlink" href="#python-data-structures-3x" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
+<section id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>The data_structures3x is a python package with 3 of the most basic data structures.
 The package would keep updating as python itself updates to higher versions.</p>
@@ -53,20 +54,20 @@ The package would keep updating as python itself updates to higher versions.</p>
 <li><p>Linked List</p></li>
 <li><p>Hash table</p></li>
 </ul>
-</div>
-<div class="section" id="installation">
+</section>
+<section id="installation">
 <h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
 <p>If not already, <a class="reference external" href="https://pip.pypa.io/en/stable/installing/">install pip</a>.</p>
 <p>Install the package with <code class="docutils literal notranslate"><span class="pre">pip</span></code> or <code class="docutils literal notranslate"><span class="pre">pip3</span></code></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">data</span><span class="o">-</span><span class="n">structures3x</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="usage">
+</section>
+<section id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="binary-tree">
+<section id="binary-tree">
 <h3>Binary Tree<a class="headerlink" href="#binary-tree" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="initialize-and-print-the-binary-tree">
+<section id="initialize-and-print-the-binary-tree">
 <h4>Initialize and print the binary tree<a class="headerlink" href="#initialize-and-print-the-binary-tree" title="Permalink to this headline">¶</a></h4>
 <p>The Node object contains 3 attributes:</p>
 <ul class="simple">
@@ -93,8 +94,8 @@ The package would keep updating as python itself updates to higher versions.</p>
     <span class="m">6</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="get-children">
+</section>
+<section id="get-children">
 <h4>Get children<a class="headerlink" href="#get-children" title="Permalink to this headline">¶</a></h4>
 <p>To get the children of a node, use:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">foo</span> <span class="o">=</span> <span class="n">Node</span><span class="p">(</span><span class="s2">&quot;O&quot;</span><span class="p">)</span>
@@ -114,14 +115,14 @@ The package would keep updating as python itself updates to higher versions.</p>
 <p>Notice that the node foo, just has a value, but does not have any children, so the return value is a set of two Nones.
 Whereas bar, has foo on its left, but nothing on the right, so the right attribute is None.
 Finally, baz have both the two children filled with either foo and bar, so it returns a set of the nodes.</p>
-</div>
-</div>
-<div class="section" id="linked-list">
+</section>
+</section>
+<section id="linked-list">
 <h3>Linked list<a class="headerlink" href="#linked-list" title="Permalink to this headline">¶</a></h3>
 <p>A linked list in our case, is implemented using an object that is somehow similar to a node.
 It uses a class called <code class="docutils literal notranslate"><span class="pre">Item</span></code></p>
 <p>An Item has two attributes, value and pointer, where the value is the same as before, and the pointer is the next node in the linked list.</p>
-<div class="section" id="initialize-and-print-the-linked-list">
+<section id="initialize-and-print-the-linked-list">
 <h4>Initialize and print the linked list.<a class="headerlink" href="#initialize-and-print-the-linked-list" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">dt_structures3x.linkedlist</span> <span class="kn">import</span> <span class="n">Item</span>
 <span class="c1"># linked list</span>
@@ -134,8 +135,8 @@ It uses a class called <code class="docutils literal notranslate"><span class="p
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="m">10</span> -&gt; <span class="m">17</span> -&gt; <span class="m">19</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="next-node">
+</section>
+<section id="next-node">
 <h4>Next node<a class="headerlink" href="#next-node" title="Permalink to this headline">¶</a></h4>
 <p>If you go to the next node using the getNextNode() method:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">next</span> <span class="o">=</span> <span class="n">root</span><span class="o">.</span><span class="n">getNextNode</span><span class="p">()</span>
@@ -156,8 +157,8 @@ It uses a class called <code class="docutils literal notranslate"><span class="p
 <span class="m">17</span> -&gt; <span class="m">19</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="append-children">
+</section>
+<section id="append-children">
 <h4>Append children<a class="headerlink" href="#append-children" title="Permalink to this headline">¶</a></h4>
 <p>We can append element(s) to the linkedlist using the method appendChild().
 If the current item’s pointer is none, it would set the pointer to the new node,
@@ -174,16 +175,16 @@ but if there is one, it would go all the way to the end of the linked list and a
 <span class="m">10</span> -&gt; <span class="m">17</span> -&gt; <span class="m">19</span> -&gt; Foo
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="hash-tables">
+</section>
+</section>
+<section id="hash-tables">
 <h3>Hash tables<a class="headerlink" href="#hash-tables" title="Permalink to this headline">¶</a></h3>
 <p>Initialize and print the hash table
 …
 Anyways, I’m lazy.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
             <div class="clearer"></div>
@@ -255,12 +256,12 @@ Anyways, I’m lazy.</p>
         <li class="right" >
           <a href="Python%20Algorithms%203x.html" title="Python Algorithms 3x"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Harvard90873&#39;s Docs 1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">RelentlessExploration&#39;s Docs 1.0 documentation</a> &#187;</li>
         <li class="nav-item nav-item-this"><a href="">Python Data Structures 3x</a></li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2021, Harvard90873.
+        &#169; Copyright 2021, Tim.
       Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.3.
     </div>
   </body>

@@ -1,4 +1,4 @@
-Welcome to Harvard90873's ReadTheDocs!
+Welcome to RelentlessExploration's ReadTheDocs!
 ==================================================
 
 .. code-block:: python

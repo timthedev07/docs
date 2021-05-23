@@ -43,8 +43,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u"Harvard90873's Docs"
-copyright = u'2021, Harvard90873'
+project = u"RelentlessExploration's Docs"
+copyright = u'2021, Tim'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
